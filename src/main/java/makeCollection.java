@@ -9,13 +9,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Main {
-    private static final String dataFolder = "./data";
-    private static final String outputFilePath = "./result.xml";
+public class makeCollection {
+    private static final String outputFilePath = "./collection.xml";
 
-    public static void main(String[] args) {
+    public static void htmlToCollection(String dataFolderPath) {
         try {
-            Stream<Path> filePaths = Files.walk(Paths.get(dataFolder));
+            Stream<Path> filePaths = Files.walk(Paths.get(dataFolderPath));
             List<Path> paths = filePaths.filter(Files::isRegularFile).collect(Collectors.toList());
             if (paths.size() == 0) return;
             var irDocument = new IRDocument();
@@ -35,4 +34,3 @@ public class Main {
         }
     }
 }
-
