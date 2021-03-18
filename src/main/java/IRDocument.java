@@ -43,6 +43,7 @@ public class IRDocument {
         var transformerFactory = TransformerFactory.newInstance();
         var transformer = transformerFactory.newTransformer();
         transformer.setOutputProperty(OutputKeys.ENCODING, "UTF-8");
+        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 
         var source = new DOMSource(this.document);
         var result = new StreamResult(new FileOutputStream(path));

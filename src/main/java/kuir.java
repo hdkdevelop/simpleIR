@@ -9,13 +9,9 @@ public class kuir {
             System.exit(0);
         }
         switch (command) {
-            case "-c":
-                makeCollection.htmlToCollection(path);
-                break;
-            case "-k":
-                break;
-            default:
-                break;
+            case "-c" -> makeCollection.htmlToCollection(path);
+            case "-k" -> makeKeyword.collectionToIndex(path);
+            default -> System.out.println("Invalid Arguments");
         }
     }
 }
