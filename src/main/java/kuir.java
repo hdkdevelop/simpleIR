@@ -11,6 +11,7 @@ public class kuir {
         switch (command) {
             case "-c" -> makeCollection.htmlToCollection(path);
             case "-k" -> makeKeyword.collectionToIndex(path);
+            case "-i" -> indexer.indexToPost(path);
             default -> System.out.println("Invalid Arguments");
         }
     }
