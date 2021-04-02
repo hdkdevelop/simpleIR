@@ -25,6 +25,9 @@ public class searcher {
             var pairs = CalcSim(keywordList, maps);
             pairs = Arrays.stream(pairs).sorted((a, b) -> b.weight.compareTo(a.weight)).toArray(Pair[]::new);
             var titles = getDocumentTitles(collectionFilePath);
+            for(int i = 0; i < pairs.length; i++) {
+                System.out.println("id: " + pairs[i].id + ", weight: " + pairs[i].weight);
+            }
             for(int i = 0; i < 3; i++) {
                 System.out.println(titles.get(pairs[i].id));
             }
@@ -38,6 +41,7 @@ public class searcher {
         for(int i = 0; i < results.length; i++) results[i] = new Pair(i, BigDecimal.valueOf(0));
         for(var keyword: keywordList) {
             var values = indexMap.get(keyword.getString());
+            if(values == null) continue;
             for(int i = 0; i < values.size(); i+=2) {
                 var documentId = values.get(i).intValue();
                 var weight = values.get(i+1);
