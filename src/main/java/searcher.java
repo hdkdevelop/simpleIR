@@ -59,17 +59,18 @@ public class searcher {
         Pair[] results = new Pair[docCounts];
         for(int i = 0; i < results.length; i++) results[i] = new Pair(i, BigDecimal.valueOf(0));
 
+        int[] tf = {1, 1, 1, 1, 1};
+
+        BigDecimal A = BigDecimal.ZERO;
+        for(int i = 0; i < docCounts; i++) A = A.add(BigDecimal.valueOf(Math.pow(tf[i], 2)));
+        A = BigDecimal.valueOf(Math.sqrt(A.doubleValue()));
+
+        BigDecimal[] B = new BigDecimal[docCounts];
+        Arrays.fill(B, BigDecimal.ZERO);
+        // todo: innerProduct에서도 키워드 확인하므로 중복
+        //       count[keyword][docId]로 문서 양 조건봐서 리팩토링 or 패스
         for(var keyword: keywordList) {
             var values = indexMap.get(keyword.getString());
-            int[] tf = {1, 1, 1, 1, 1};
-
-            BigDecimal A = BigDecimal.ZERO;
-            for(int i = 0; i < docCounts; i++) A = A.add(BigDecimal.valueOf(Math.pow(tf[i], 2)));
-            A = BigDecimal.valueOf(Math.sqrt(A.doubleValue()));
-
-            BigDecimal[] B = new BigDecimal[docCounts];
-            Arrays.fill(B, BigDecimal.ZERO);
-
             for(int i = 0; i < values.size(); i+=2) {
                 var documentId = values.get(i).intValue();
                 var weight = values.get(i+1);
@@ -77,15 +78,13 @@ public class searcher {
                         BigDecimal.valueOf(Math.pow(weight, 2))
                 );
             }
-            for(int i = 0; i < B.length; i++) {
-                B[i] = BigDecimal.valueOf(Math.sqrt(B[i].doubleValue()));
-            }
-
-            for(int i = 0; i < results.length; i++) {
-                if(B[i].compareTo(BigDecimal.ZERO) == 0) continue;
-                results[i].weight = innerProduct[i].weight.divide(A.multiply(B[i]), RoundingMode.HALF_UP);
-            }
         }
+        for(int i = 0; i < B.length; i++) {
+            B[i] = BigDecimal.valueOf(Math.sqrt(B[i].doubleValue()));
+            if(A.compareTo(BigDecimal.ZERO) == 0 || B[i].compareTo(BigDecimal.ZERO) == 0) continue;
+            results[i].weight = innerProduct[i].weight.divide(A.multiply(B[i]), RoundingMode.HALF_UP);
+        }
+
         for (Pair result : results) result.weight = result.weight.setScale(2, RoundingMode.HALF_UP);
         return results;
     }
