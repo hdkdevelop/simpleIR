@@ -36,7 +36,7 @@ public class searcher {
         }
     }
 
-    private static Pair[] CalcSim(KeywordList keywordList, HashMap<String, List<Double>> indexMap) {
+    private static Pair[] InnerProduct(KeywordList keywordList, HashMap<String, List<Double>> indexMap) {
         Pair[] results = new Pair[5];
         for(int i = 0; i < results.length; i++) results[i] = new Pair(i, BigDecimal.valueOf(0));
         for(var keyword: keywordList) {
@@ -48,7 +48,17 @@ public class searcher {
                 results[documentId].weight = results[documentId].weight
                         .add(BigDecimal.valueOf(weight));
             }
+        }
+        for (Pair result : results) result.weight = result.weight.setScale(2, RoundingMode.HALF_UP);
+        return results;
+    }
 
+    private static Pair[] CalcSim(KeywordList keywordList, HashMap<String, List<Double>> indexMap) {
+        Pair[] innerProduct = InnerProduct(keywordList, indexMap);
+        Pair[] results = new Pair[5];
+
+        for(var keyword: keywordList) {
+            var values = indexMap.get(keyword.getString());
             int[] tf = {1, 1, 1, 1, 1};
 
             BigDecimal A = BigDecimal.ZERO;
@@ -71,7 +81,7 @@ public class searcher {
 
             for(int i = 0; i < results.length; i++) {
                 if(B[i].compareTo(BigDecimal.ZERO) == 0) continue;
-                results[i].weight = results[i].weight.divide(A.multiply(B[i]), RoundingMode.HALF_UP);
+                results[i].weight = innerProduct[i].weight.divide(A.multiply(B[i]), RoundingMode.HALF_UP);
             }
         }
         for (Pair result : results) result.weight = result.weight.setScale(2, RoundingMode.HALF_UP);
