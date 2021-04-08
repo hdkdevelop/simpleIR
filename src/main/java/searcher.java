@@ -56,6 +56,7 @@ public class searcher {
     private static Pair[] CalcSim(KeywordList keywordList, HashMap<String, List<Double>> indexMap) {
         Pair[] innerProduct = InnerProduct(keywordList, indexMap);
         Pair[] results = new Pair[5];
+        for(int i = 0; i < results.length; i++) results[i] = new Pair(i, BigDecimal.valueOf(0));
 
         for(var keyword: keywordList) {
             var values = indexMap.get(keyword.getString());
