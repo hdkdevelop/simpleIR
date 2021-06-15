@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f4487727-3e4a-4690-bdb9-4c96f71a011b" name="Default Changelist" comment="week15" />
+    <list id="d2d15978-d30e-4528-be1f-2cfaeaf99cf5" name="Revert &quot;중간고사: 코드 정리&quot;" comment="Revert &quot;중간고사: 코드 정리&quot;&#10;&#10;This reverts commit b4813c6f" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="simpleIR" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="feature" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1paZSBjqssToiwgr0jBFp2mcKbZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/python" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/build/classes/java/main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/python" />
+      <recent name="$PROJECT_DIR$/libs" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle --build-cache" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.week15">
+    <configuration default="true" type="Application" factoryName="Application">
+      <module name="simpleIR" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="genSnippet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="genSnippet" />
+      <module name="simpleIR" />
+      <option name="PROGRAM_PARAMETERS" value="-f input.txt -q &quot;라면 반죽 소금 초밥 채소&quot;" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kuir collection" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="kuir" />
+      <module name="simpleIR.main" />
+      <option name="PROGRAM_PARAMETERS" value="-c ./data" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kuir index" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="kuir" />
+      <module name="simpleIR.main" />
+      <option name="PROGRAM_PARAMETERS" value="-s ./index.post -q &quot;라면에는 아이스를 넣는다&quot; " />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="kuir" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kuir" />
+      <module name="simpleIR" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="week15" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-15" />
+      <option name="MAIN_CLASS_NAME" value="week15" />
+      <module name="simpleIR.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/hdkdevelop/Desktop/konkuk/오픈소스SW/simpleIR/.idea" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/.idea" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--build-cache" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JarApplication">
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.week15" />
+      <item itemvalue="Application.kuir collection" />
+      <item itemvalue="Application.kuir index" />
+      <item itemvalue="Application.genSnippet" />
+      <item itemvalue="Application.kuir" />
+      <item itemvalue="Gradle./Users/hdkdevelop/Desktop/konkuk/오픈소스SW/simpleIR/.idea" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle./Users/hdkdevelop/Desktop/konkuk/오픈소스SW/simpleIR/.idea" />
+        <item itemvalue="Application.genSnippet" />
+        <item itemvalue="Application.kuir" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f4487727-3e4a-4690-bdb9-4c96f71a011b" name="Default Changelist" comment="" />
+      <created>1615423161725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615423161725</updated>
+      <workItem from="1615423163334" duration="2745000" />
+      <workItem from="1615441490361" duration="540000" />
+      <workItem from="1616025791920" duration="4439000" />
+      <workItem from="1616543676249" duration="5000" />
+      <workItem from="1616630613614" duration="4647000" />
+      <workItem from="1616635617642" duration="1148000" />
+      <workItem from="1617235301564" duration="2002000" />
+      <workItem from="1617237537227" duration="2808000" />
+      <workItem from="1617343881104" duration="759000" />
+      <workItem from="1617623163770" duration="616000" />
+      <workItem from="1617840145109" duration="3620000" />
+      <workItem from="1617845582188" duration="131000" />
+      <workItem from="1618908243033" duration="2670000" />
+      <workItem from="1620261842239" duration="459000" />
+      <workItem from="1620705188542" duration="271000" />
+      <workItem from="1620705477848" duration="1496000" />
+      <workItem from="1620864167508" duration="1121000" />
+      <workItem from="1620873081133" duration="331000" />
+      <workItem from="1621471192990" duration="66000" />
+      <workItem from="1622075395012" duration="328000" />
+      <workItem from="1622692833694" duration="36000" />
+      <workItem from="1623644299005" duration="347000" />
+      <workItem from="1623644654039" duration="271000" />
+      <workItem from="1623644947787" duration="653000" />
+      <workItem from="1623645608455" duration="517000" />
+      <workItem from="1623744939529" duration="1685000" />
+    </task>
+    <task id="LOCAL-00001" summary="Update gitignore &amp; Add gradle">
+      <created>1615423390563</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615423390563</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add feature: html to XML converter">
+      <created>1615425969702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615425969702</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Seperate Main and Collection">
+      <created>1616027254437</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616027254437</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add feature: collection to index">
+      <created>1616030284841</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616030284841</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add feature: index to index.post">
+      <created>1616634794286</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616634794286</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add: feature branch &amp;&amp; searcher">
+      <created>1617240281322</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617240281322</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update: Add &quot;weights&quot; on output of searcher.java">
+      <created>1617344626605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617344626605</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add: cosine similarity">
+      <created>1617842664470</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617842664470</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update: init CalcSim results">
+      <created>1617842993960</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1617842993960</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update: set documentSize to Const">
+      <created>1617843143346</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617843143346</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update: delete duplicated calc">
+      <created>1617843809330</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1617843809330</updated>
+    </task>
+    <task id="LOCAL-00012" summary="중간고사">
+      <created>1618911986484</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1618911986484</updated>
+    </task>
+    <task id="LOCAL-00013" summary="중간고사: 코드 정리">
+      <created>1618912278037</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1618912278037</updated>
+    </task>
+    <task id="LOCAL-00014" summary="week 9, 10">
+      <created>1620262177984</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1620262177984</updated>
+    </task>
+    <task id="LOCAL-00015" summary="delete others">
+      <created>1620262265608</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620262265608</updated>
+    </task>
+    <task id="LOCAL-00016" summary="week 11">
+      <created>1620873190855</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1620873190855</updated>
+    </task>
+    <task id="LOCAL-00017" summary="week 12">
+      <created>1621471244881</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1621471244881</updated>
+    </task>
+    <task id="LOCAL-00018" summary="week 13">
+      <created>1622075524709</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1622075524709</updated>
+    </task>
+    <task id="LOCAL-00019" summary="week 14">
+      <created>1622692857601</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1622692857601</updated>
+    </task>
+    <task id="LOCAL-00020" summary="week15">
+      <created>1623646100542</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1623646100542</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update gitignore &amp; Add gradle" />
+    <MESSAGE value="Add feature: html to XML converter" />
+    <MESSAGE value="Separate Main and Collection" />
+    <MESSAGE value="Add feature: collection to index" />
+    <MESSAGE value="Add feature: index to index.post" />
+    <MESSAGE value="Add: feature branch &amp;&amp; searcher" />
+    <MESSAGE value="Update: Add &quot;weights&quot; on output of searcher.java" />
+    <MESSAGE value="Add: cosine similarity" />
+    <MESSAGE value="Update: init CalcSim results" />
+    <MESSAGE value="Update: set documentSize to Const" />
+    <MESSAGE value="Update: delete duplicated calc" />
+    <MESSAGE value="중간고사" />
+    <MESSAGE value="중간고사: 코드 정리" />
+    <MESSAGE value="week 9, 10" />
+    <MESSAGE value="delete others" />
+    <MESSAGE value="week 11" />
+    <MESSAGE value="week 12" />
+    <MESSAGE value="week 13" />
+    <MESSAGE value="week 14" />
+    <MESSAGE value="week15" />
+    <option name="LAST_COMMIT_MESSAGE" value="week15" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="java.util.HashMap$Node" memberName="value" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
